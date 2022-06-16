@@ -46,6 +46,7 @@ textarea {
 
 #progress {
     width: 100%;
+    margin-top: -10px;
 }
   
 #progress_bar {
@@ -55,6 +56,9 @@ textarea {
     transition: 0.5s ease;
 }
 
+#char_count {
+    text-align: end;
+}
 #live {
     overflow: hidden;
     width: 100%;
