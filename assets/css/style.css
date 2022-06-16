@@ -55,6 +55,7 @@ textarea {
     transition: 0.5s ease;
 }
 
-p{
-
+#live {
+    overflow: hidden;
+    width: 100%;
 }
