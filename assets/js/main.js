@@ -4,36 +4,36 @@ const em = document.getElementById("em");
 const span = document.getElementById("span");
 const cite = document.getElementById("cite");
 
-const text = document.getElementById("text");
+const html = document.getElementById("html");
 const max = 200; 
 const progress_bar = document.getElementById("progress_bar"); 
 
 strong.addEventListener('click', () => {
-    text.value +="<strong></strong>";
+    html.value +="<strong></strong>";
 });
 
 em.addEventListener('click', () => {
-    text.value +="<em></em>";
+    html.value +="<em></em>";
 });
 
 span.addEventListener('click', () => {
-    text.value +="<span></span>";
+    html.value +="<span></span>";
 });
 
 cite.addEventListener('click', () => {
-    text.value +="<cite></cite>";
+    html.value +="<cite></cite>";
 });
 
-text.onkeyup = text.onkeydown = function(){
+html.onkeyup = html.onkeydown = function(){
     document.getElementById("live").innerHTML = this.value;
 
-    let counting = text.value.length; 
+    let counting = html.value.length; 
     let count = max-live.textContent.length;
     document.getElementById("char_count").innerHTML = count; 
         if (count == 0) {
-            text.setAttribute('maxlength', counting)
+            html.setAttribute('maxlength', counting)
         } else {
-            text.setAttribute('maxlength', '')
+            html.setAttribute('maxlength', '')
         }
 
         const percent = 100*live.textContent.length/max;
