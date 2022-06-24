@@ -5,8 +5,20 @@ const span = document.getElementById("span");
 const cite = document.getElementById("cite");
 
 const html = document.getElementById("html");
+const css = document.getElementById("css");
+
 const max = 200; 
 const progress_bar = document.getElementById("progress_bar"); 
+
+const load = document.getElementById("img"); 
+
+html.addEventListener("input", () => {
+    load.style.visibility = "visible";
+});
+
+document.addEventListener("mouseover", () => {
+    load.style.visibility = "hidden";
+});
 
 strong.addEventListener('click', () => {
     html.value +="<strong></strong>";
@@ -50,6 +62,8 @@ html.onkeyup = html.onkeydown = function(){
             }
 }
 
-
+/* css.onkeyup = css.onkeydown = function(){
+    document.getElementById("live").innerHTML = this.value;
+} */
 
 

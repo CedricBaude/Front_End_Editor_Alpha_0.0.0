@@ -29,9 +29,14 @@ nav{
 }
 
 .html {
-    width: 100%;
-    margin: 20px auto;
+    width: 50%;
+    margin: 20px 10px;
     text-align: center;
+}
+.css {
+    width: 50%;
+    margin: 20px 10px;
+    text-align: center;   
 }
 
 textarea {
@@ -62,4 +67,20 @@ textarea {
 #live {
     overflow: hidden;
     width: 100%;
+}
+.write{
+    display: flex;
+    flex-direction: row;
+
+}
+.live_title{
+    display: flex;
+    flex-direction: row;
+}
+img {
+    margin-left: 20px;
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
 }
