@@ -62,6 +62,10 @@ html.onkeyup = html.onkeydown = function(){
             }
 }
 
+
+/* css.onkeyup = css.onkeydown = function(){
+    document.getElementById("live").innerHTML = html.value + css.value; 
+}*/
 /* css.onkeyup = css.onkeydown = function(){
     document.getElementById("live").innerHTML = this.value;
 } */
